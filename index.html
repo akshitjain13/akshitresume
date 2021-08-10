@@ -1,0 +1,208 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+	<title>Travels</title>
+	<style>
+		.slider
+		{
+			height:440px;
+			margin:auto;
+			opacity:0.9;
+		}
+		.slider img
+		{
+			width:100%;
+			height:440px;
+			position:absolute;
+			margin:auto;
+			z-index:-1;
+		}
+		.zoomin img
+		{
+			width:300px;
+			height:300px;
+			-webkit-transition:all 2s ease;
+			-ms-transition:all 2s ease;
+			-moz-transition:all 2s ease;
+			transition:all 2s ease;
+			opacity:0.9;
+		}
+		.zoomin img:hover
+		{
+			width:350px;
+			height:350px;
+		}
+		figure
+		{
+			width:300px;
+			text-align:center;
+		}
+		figure figcaption
+		{
+			background-color:#fff;
+			height:30px;
+			font-size:25px;
+			text-align:center;
+			text-shadow:2px 3px 5px #ccc;
+		}
+	</style>
+	<script>
+		var i=1;
+		$(function(){
+		$('.slider img').css('display','none');
+		$('.img1').css('display','block');
+		setInterval('show()',9000);
+		})
+		function show()
+		{
+			$('.img'+i).fadeOut(1000);
+				i=i+1;
+				if(i==7)
+				{
+					i=1;
+				}				
+			$('.img'+i).fadeIn(1000);
+		}
+	</script>
+</head>
+		<body>
+		
+		<!-- Header starts here -->
+		
+			<div class="header1">
+				<div class="header2">
+					<div class="header3">
+					<a href="index.html"><img src="images/pic.jpg" width="100" height="100"/></a>
+					</div>
+					<div class="header4">
+						<div class="ribbon">
+						<ul class="nav" type="none">
+						<a href="about.html"><span><li>Personal Detail</li></span></a>
+						<a href="experience.html"><span><li>Experience</li></span></a>
+						<a href="skill.html"><span><li>Skill</li></span></a>
+						<a href="education.html"><span><li>Education</li></span></a>
+						<a href="contact.html"><span><li>Contact Me</li></span></a>
+						</ul>
+				</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header ends here -->
+			<!--slider starts here-->
+		<div class="slider">
+			<img class="img1" src="images/name.jpg"/>
+			<img class="img2" src="images/w3.jpeg"/>
+			<img class="img3" src="images/w1.jpeg"/>
+			<img class="img4" src="images/w2.jpeg"/>
+			<img class="img5" src="images/w4.jpg"/>
+			<img class="img6" src="images/w5.jpg"/>
+		</div>
+	<!--slider ends here-->
+	
+	<!--Destination starts here-->
+	<div class="main">
+	<p>--My Profile--</p>
+	</div>
+	
+	<!--Main Container Starts here-->
+	
+			<!--product starts here-->
+		<center>
+			<legend>
+				<table cellspacing="50">
+					<tr>
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="career.html"><img src="images/w3.jpeg"/></a>
+										<figcaption>
+											Career Profile
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+					
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="experience.html"><img src="images/w1.jpeg"/></a>
+										<figcaption>
+											Experience Summary
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+						
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="skill.html"><img src="images/w2.jpeg"/></a>
+										<figcaption>
+											Skillset
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+					</tr>
+					</table>
+					</center>
+					<!--product ends here-->
+			<!--product starts here-->
+		<center>
+			<legend>
+				<table cellspacing="50">
+					<tr>
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="responsibility.html"><img src="images/w4.jpg"/></a>
+										<figcaption>
+											Responsibility Handled
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+					
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="education.html"><img src="images/w5.jpg"/></a>
+										<figcaption>
+											Academic 
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+						
+						<td>
+							<div class="zoomin">
+								<figure>
+									<a href="projecthandle.html"><img src="images/w2.jpg"/></a>
+										<figcaption>
+											Project Handled
+										</figcaption>
+								</figure>
+							</div>
+						</td>
+					</tr>
+					</table>
+					</center>
+					<!--product ends here-->		
+					
+	<!--Hotels ends here-->
+	<!--Main Container Ends here-->
+	<!--footer starts here-->
+				<div class="footer">
+				<div class="footer1">
+					<div class="footer2">
+					<a href="index.html"><img src="images/pic.jpg" width="100" height="100"/></a>
+					</div>
+					<div class="footer3">
+					<h3>All Rights Reserved Terms of Use and Privacy Policy.</h3>
+					</div>
+				</div>
+				</div>
+			<!--footer ends here-->
+		</body>
+</html>

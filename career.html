@@ -1,0 +1,123 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+	<title>Travels</title>
+	<style>
+		.slider
+		{
+			height:440px;
+			margin:auto;
+			opacity:0.9;
+		}
+		.slider img
+		{
+			width:100%;
+			height:440px;
+			position:absolute;
+			margin:auto;
+			z-index:-1;
+		}
+		.zoomin img
+		{
+			width:300px;
+			height:300px;
+			-webkit-transition:all 2s ease;
+			-ms-transition:all 2s ease;
+			-moz-transition:all 2s ease;
+			transition:all 2s ease;
+			opacity:0.9;
+		}
+		.zoomin img:hover
+		{
+			width:350px;
+			height:350px;
+		}
+		figure
+		{
+			width:300px;
+			text-align:center;
+		}
+		figure figcaption
+		{
+			background-color:#fff;
+			height:30px;
+			font-size:25px;
+			text-align:center;
+			text-shadow:2px 3px 5px #ccc;
+		}
+	</style>
+	<script>
+		var i=1;
+		$(function(){
+		$('.slider img').css('display','none');
+		$('.img1').css('display','block');
+		setInterval('show()',2000);
+		})
+		function show()
+		{
+			$('.img'+i).fadeOut(1000);
+				i=i+1;
+				if(i==7)
+				{
+					i=1;
+				}				
+			$('.img'+i).fadeIn(1000);
+		}
+	</script>
+</head>
+		<body>
+		
+		<!-- Header starts here -->
+		
+			<div class="header1">
+				<div class="header2">
+					<div class="header3">
+					<a href="index.html"><img src="images/pic.jpg" width="100" height="100"/></a>
+					</div>
+					<div class="header4">
+						<div class="ribbon">
+						<ul class="nav" type="none">
+						<a href="about.html"><span><li>Personal Detail</li></span></a>
+						<a href="experience.html"><span><li>Experience</li></span></a>
+						<a href="skill.html"><span><li>Skill</li></span></a>
+						<a href="education.html"><span><li>Education</li></span></a>
+						<a href="contact.html"><span><li>Contact Me</li></span></a>
+						</ul>
+				</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header ends here -->
+			
+			<!--Main starts here-->
+			<div class="m1">
+				<div class="m2">
+				<center><h1>Career</h1></center>
+			<p style="text-align:justify;padding:3px; margin:5px; font-size:1.1em;">
+				<h2>My name is Akshit Jain, I’m 24 years old and I graduated from Panjab University with a B.C.A. in Computer Applications. While there, I learned a lot of theory in subjects like Data Structures,RDBMS,C++,Web Technologies and more. I was also part of the many Inter-College Competitions, and maintained a Percentage of 74%.
+
+I’ve worked hard in my education and After that, I got job opportunity in WIPRO Technologies,Pune.
+Here I am working as Highly Engaged Infrastructure Automation Engineer in Automating the Major areas on Infrastructure Stand Point,Specialist in Automating Infrastructure Tasks,Performing Automation Using Python, Powershell Scripting.
+In my downtime, I enjoy reading about AI, tech, and robotics. Since you guys do all 3, I thought I’d apply.</h1>
+			</p>
+				</div>
+			</div>
+		
+			<!--Main ends here-->
+			
+			
+	<!--footer starts here-->
+				<div class="footer">
+				<div class="footer1">
+					<div class="footer2">
+					<a href="index.html"><img src="images/pic.jpg" width="100" height="100"/></a>
+					</div>
+					<div class="footer3">
+					<h3>All Rights Reserved Terms of Use and Privacy Policy.</h3>
+					</div>
+				</div>
+				</div>
+			<!--footer ends here-->
+		</body>
+</html>

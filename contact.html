@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery.js"></script>
+	<title>Travels</title>
+	<style>
+		.slider
+		{
+			height:440px;
+			margin:auto;
+			opacity:0.9;
+		}
+		.slider img
+		{
+			width:100%;
+			height:440px;
+			position:absolute;
+			margin:auto;
+			z-index:-1;
+		}
+		.zoomin img
+		{
+			width:300px;
+			height:300px;
+			-webkit-transition:all 2s ease;
+			-ms-transition:all 2s ease;
+			-moz-transition:all 2s ease;
+			transition:all 2s ease;
+			opacity:0.9;
+		}
+		.zoomin img:hover
+		{
+			width:350px;
+			height:350px;
+		}
+		figure
+		{
+			width:300px;
+			text-align:center;
+		}
+		figure figcaption
+		{
+			background-color:#fff;
+			height:30px;
+			font-size:25px;
+			text-align:center;
+			text-shadow:2px 3px 5px #ccc;
+		}
+	</style>
+	<script>
+		var i=1;
+		$(function(){
+		$('.slider img').css('display','none');
+		$('.img1').css('display','block');
+		setInterval('show()',2000);
+		})
+		function show()
+		{
+			$('.img'+i).fadeOut(1000);
+				i=i+1;
+				if(i==7)
+				{
+					i=1;
+				}				
+			$('.img'+i).fadeIn(1000);
+		}
+	</script>
+</head>
+		<body>
+		
+		<!-- Header starts here -->
+		
+			<div class="header1">
+				<div class="header2">
+					<div class="header3">
+					<a href="index.html"><img src="images/pic.jpg" width="100" height="100"/></a>
+					</div>
+					<div class="header4">
+						<div class="ribbon">
+						<ul class="nav" type="none">
+						<a href="about.html"><span><li>Personal Detail</li></span></a>
+						<a href="experience.html"><span><li>Experience</li></span></a>
+						<a href="skill.html"><span><li>Skill</li></span></a>
+						<a href="education.html"><span><li>Education</li></span></a>
+						<a href="contact.html"><span><li>Contact Me</li></span></a>
+						</ul>
+				</div>
+					</div>
+				</div>
+			</div>
+			<!-- Header ends here -->	<h1 style="text-align:center; text-shadow:2px 2px 2px #ccc;">Contact Us</h1>
+			<div class="contact1">
+				<div class="contact2">
+					<div class="contact3">	
+						<font style="font-weight:bold; font-size:30px;">Get in Touch</font>
+		
+								<p style="font-weight:bold;">First Name</p>
+								<p><input class="hh" type="text" name="fa"/></p>
+								
+								<p style="font-weight:bold;">Last Name</p>
+								<p><input class="hh" type="text" name="fa"/></p>
+							
+								<p style="font-weight:bold;">Message</p>
+								<p><input style="width:240px; opacity:0.9; height:100px; border:1px solid orange;" type="text" name="ms"/></p>
+							
+						
+							
+								<p style="font-weight:bold;">Email</p>
+								<p><input class="hh" type="text" name="em"/></p>
+									
+								<p style="font-weight:bold;">Phone</p>
+								<p><input class="hh" type="text" name="em"/></p>
+								<p><input class="kl" type="submit" name="save" value="Send Message"/></p>
+							</div>	
+					
+				</div>
+				</div>
+		
+		</body>
+</html>
